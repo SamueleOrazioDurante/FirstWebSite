@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Millennio Abbigliamento</title>
+    <style>
+      body {
+        background-image: url("Image/sfondo.jpg");
+      }
+      .b:link, .b:visited {
+  background-color: #ecd414;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  display: inline-block;
+  font-family: Fantasy;
+}
+
+.b:hover, .b:active {
+  background-color: #f0df64;
+}
+.c{
+  background-color: #ecd414;
+  height:550px;
+  width:450px;
+  position:absolute;
+  top:250px;
+  left:240px;
+}
+.pimage{
+  position:absolute;
+  top:35px;
+  left:35px;
+}
+.d{
+  background-image:url("Image/sfondo.jpg");
+  border-width:10px;
+  border-style: solid;
+  border-color:#ecd414;
+  border-radius:10px;
+  position:absolute;
+  top:270px;
+  right:100px;
+  height:400px;
+  width:600px;
+
+}
+.text1{
+  font-family: Geneva;
+  position:absolute;
+  left: 20px;
+}
+.text2{
+  font-family: Monospace;
+  position:absolute;
+  width:250px;
+  height:150px;
+  left: 300px;
+  top: 100px;
+  background-color:#e7e7e7;
+  border-style:solid;
+  border-color:#ecd414;
+  border-radius:20px;
+  text-align:center;
+}
+.price{
+  font-family: "Courier New";
+  position:absolute;
+  left: 20px;
+  top: 100px;
+ font-size:22px;
+}
+.prod{
+  font-family: Geneva;
+  position:absolute;
+  left: 72px;
+  top: 223px;
+  font-size:18px;
+}
+.min1{
+  position:absolute;
+  left: 160px;
+  top: 246px;
+  text-align: center;
+  background-color: #e7e7e7;
+  color: black;
+}
+.min1:hover{
+  border-color:#ecd414;
+  background-color:#cccccc;
+}
+#np{
+  position:absolute;
+  left: 191px;
+  top: 227px;
+}
+.max1{
+  position:absolute;
+  left: 209px;
+  top: 246px;
+  text-align: center;
+  background-color: #e7e7e7;
+  color: black;
+}
+.max1:hover{
+  border-color:#ecd414;
+  background-color:#cccccc;
+}
+.size{
+  position:absolute;
+  left: 97px;
+  top: 184px;
+  font-size: 18px;
+}
+.min2{
+  position:absolute;
+  left: 160px;
+  top: 206px;
+  text-align: center;
+  background-color: #e7e7e7;
+  color: black;
+}
+.min2:hover{
+  border-color:#ecd414;
+  background-color:#cccccc;
+}
+#size{
+  position:absolute;
+  left: 189px;
+  top: 187px;
+}
+.max2{
+  position:absolute;
+  left: 209px;
+  top: 206px;
+  text-align: center;
+  background-color: #e7e7e7;
+  color: black;
+}
+.max2:hover{
+  border-color:#ecd414;
+  background-color:#cccccc;
+}
+.carrello{
+  position:absolute;
+  left: 180px;
+  top: 320px;
+  text-align: center;
+  background-color: #e7e7e7;
+  color: black;
+  font-size: 13px;
+  width: 150px;
+  height: 50px;
+}
+.carrello:hover{
+  border-color:#ecd414;
+  background-color:#cccccc;
+  width: 160px;
+  height: 60px;
+}
+.img1{
+  position:absolute;
+  top:450px;
+  left:60px;
+}
+.img2{
+  position:absolute;
+  top:450px;
+  left:145px;
+}
+.img3{
+  position:absolute;
+  top:450px;
+  left:230px;
+}
+.img4{
+  position:absolute;
+  top:450px;
+  left:315px;
+}
+.c1{
+  background-color:black;
+  width: 1500px;
+  height: 300px;
+  position:absolute;
+  top: 1100px;
+  text-align: center;
+}
+.color{
+  background-color:#ecd414;
+  width: 1500px;
+  height: 100px;
+  position: absolute;
+  top: 875px;
+}
+      </style>
+  </head>
+  <body>
+    <center>
+
+    <img src="Image/Logo1.png" alt="Millennio Abbigliamento" width=20% lenght=20%>
+    <br> <br> <br>
+
+    <a href="index.html" class="b"> Home </a>
+    <a href="Who.html" class="b"> Chi siamo? </a>
+    <a href="Shop.html" class="b"> Shop </a>
+    <a href="Registrati.html" class="b"> Registrati </a>
+    <a href="Rimborso.html" class="b"> Rimborso </a>
+
+    </center>
+    <br> <br> <br>
+    <div class="c">
+      <img src="Image/Scarpa1.jpg" width="380px" height="380px" class="pimage" id="pimage">
+      <button type="button" class="img1" onclick="S1()"> <img src="Image/Scarpa1.jpg" width="50px" height="50px"> </button>
+      <button type="button" class="img2" onclick="S2()"> <img src="Image/Scarpa2.jpg" width="50px" height="50px"> </button>
+      <button type="button" class="img3" onclick="S3()"> <img src="Image/Scarpa3.jpg" width="50px" height="50px"> </button>
+      <button type="button" class="img4" onclick="S4()"> <img src="Image/Scarpa4.jpg" width="50px" height="50px"> </button>
+    </div>
+
+    <div class="d">
+     <h2 class="text1"> MILLENNIO ABBIGLIAMENTO SNEAKER BLACK AND WHITE </h2>
+     <h3 class="text2"> <br> Modello tipo sneaker, realizzato con pelle di vitello, con alternanza di colori bianco/nero con suola in gomma. Lavorazione 100% italiana.  </h3>
+
+     <h1 class="price"> 44.99 € </h1>
+     <h4 class="prod"> N.Prodotti </h4>
+
+     <button type="button" class="min1" onclick="pmin()"> - </button>
+     <h4 id="np">1</h4>
+     <button type="button" class="max1" onclick="pmax()"> + </button>
+
+     <h4 class="size"> Taglia </h4>
+     <button type="button" class="min2" onclick="min1()"> - </button>
+     <h4 id="size">36</h4>
+     <button type="button" class="max2" onclick="max1()"> + </button>
+
+     <button type="button" class="carrello" onclick="carrello()"> <h4> Aggiungi al carrello</h4>  </button>
+    </div>
+    <div class="color">
+    </div>
+    <div class="c1">
+      <br>
+      <h1> <font color="white"> Contattaci </font> </h1>
+      <h3> <font color="white"> Telefono: 1234567890 </font> </h3>
+      <h3> <font color="white"> E-mail: millennioabbigliamento@gmail.com </font> </h3>
+      <h3> <font color="white"> Indirizzo: Via Torino, 34 (RM) </font> </h3>
+      <img src="Image/Logo2.png" align="left" widht=20% height=20%>
+    </div>
+
+
+    <script type="application/javascript">
+    var a=parseInt("1")
+    var size=parseInt("36")
+
+    function pmin()
+    {
+      if (a>1) {
+        a=a-1;
+        document.getElementById("np").innerHTML=a;
+      }
+      else {
+        alert("Numero di prodotti minimo raggiunto");
+      }
+    }
+    function pmax()
+    {
+      if (a<5) {
+        a=a+1;
+        document.getElementById("np").innerHTML=a;
+      }
+      else {
+        alert("Numero di prodotti massimo raggiunto");
+      }
+    }
+    function min1()
+    {
+      if (size>36) {
+        size=size-1;
+        document.getElementById("size").innerHTML=size;
+      }
+      else {
+        alert("La taglia minima è il 36");
+      }
+    }
+    function max1()
+    {
+      if (size<44) {
+        size=size+1;
+        document.getElementById("size").innerHTML=size;
+      }
+      else {
+        alert("La taglia massima è il 44");
+      }
+    }
+    function carrello(){
+      alert("MILLENNIO ABBIGLIAMENTO SNEAKER BLACK AND WHITE, con quantità " + a + " e con numero di taglia " + size + " è stato aggiunto al carrello.")
+    }
+    function S1()
+    {
+    document.getElementById("pimage").src='Image/Scarpa1.jpg';
+    }
+    function S2()
+    {
+    document.getElementById("pimage").src='Image/Scarpa2.jpg';
+    }
+    function S3()
+    {
+    document.getElementById("pimage").src='Image/Scarpa3.jpg';
+    }
+    function S4()
+    {
+    document.getElementById("pimage").src='Image/Scarpa4.jpg';
+    }
+    </script>
+
+
+  </body>
+</html>

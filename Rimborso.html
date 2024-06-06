@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Millennio Abbigliamento</title>
+    <style>
+      body {
+        background-image: url("Image/sfondo.jpg");
+      }
+      a:link, a:visited {
+  background-color: #ecd414;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  display: inline-block;
+  font-family: Fantasy;
+}
+
+a:hover, a:active {
+  background-color: #f0df64;
+}
+input[type=text], select {
+  width: 200px;
+  background-color: white;
+  color: black;
+}
+input[type=email] {
+  width: 200px;
+  background-color: white;
+  color: black;
+}
+input[type=password] {
+  width: 200px;
+  background-color: white;
+  color: black;
+}
+input[type=submit] {
+  width: 200px;
+  background-color: #ecd414;
+  padding: 14px 20px;
+  color: black;
+}
+
+input[type=submit]:hover {
+  background-color: #f0df64;
+}
+form{
+  font-family: Helvetica;
+}
+      </style>
+  </head>
+  <body>
+    <center>
+
+    <img src="Image/Logo1.png" alt="Millennio Abbigliamento" width=20% lenght=20%>
+    <br> <br> <br>
+
+      <a href="index.html"> Home </a>
+      <a href="Who.html"> Chi siamo? </a>
+      <a href="Shop.html"> Shop </a>
+      <a href="Registrati.html"> Registrati </a>
+
+      <h2> CHIEDI UN RIMBORSO </h2> <br>
+      <h4> Tutti i campi contrassegnati da * sono obbligatori. </h4>
+        <br> <br>
+
+      <form method="post" name="invio">
+
+
+        N.Ordine*: <br> <br>
+        <input type="text" name="n">
+        <br> <br>
+        Data di acquisto*:<br> <br>
+         <input type="date" name="data">
+        <br> <br>
+        Email*: <br> <br>
+        <input type="email" name="email">
+        <br> <br>
+        Motivo(Opzionale): <br> <br>
+        <input type="text" name="altro" class="c">
+        <br> <br>
+        <input type="submit" value="Invia" onclick="valida()">
+
+
+    </center>
+
+<br> <br> <br> <br> <br> 
+
+    <script>
+
+
+        function valida()
+      {
+        var n=document.invio.n.value;
+        var data=document.invio.data.value;
+        var email=document.invio.email.value;
+
+
+        if(n.length > 9)
+        {
+          alert("Errore,il numero dell'ordine è di 8 caratteri")
+          return false;
+        }
+        if(n.length < 7)
+        {
+          alert("Errore,il numero dell'ordine è di 8 caratteri")
+          return false;
+        }
+        if (isNaN(n)) {
+          alert("Errore, il numero dell'ordine è completamente numerico");
+          return false;
+        }
+        if(data=="")
+        {
+          alert("Errore, devi inserire la data di acquisto");
+          return false;
+        }
+        if(email=="")
+        {
+          alert("Errore, devi inserire l'email");
+          return false;
+        }
+
+        alert("Il rimborso per l'ordine n." + n + " acquistato il " + data + " è in corso di accettazione e appena sarà completato, verrà mandata un'e-mail di conferma a " + email + ".");
+      }
+
+      </script>
+
+  </body>
+</html>

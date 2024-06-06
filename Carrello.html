@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Millennio Abbigliamento</title>
+    <style>
+      body {
+        background-image: url("Image/sfondo.jpg");
+      }
+      .back{
+        background-color: #ecd414;
+        color: black;
+        padding: 14px 25px;
+        text-align: center;
+        display: inline-block;
+        font-family: Fantasy;
+      }
+      .back:hover{
+        background-color: #f0df64;
+      }
+      .carrello{
+        background-image: url("Image/sfondo.jpg");
+        color: black;
+        position:absolute;
+        font-family: "Courier New";
+        left: 250px;
+        top: 300px;
+        width: 500px;
+        height: 250px;
+        text-align: center;
+        border-style: solid;
+        border-color: #ecd414;
+      }
+      .pagamento{
+        background-image: url("Image/sfondo.jpg");
+        color: black;
+        position:absolute;
+        font-family: "Courier New";
+        right: 225px;
+        top: 280px;
+        width: 350px;
+        height: 350px;
+        text-align: center;
+        border-style: solid;
+        border-color: #ecd414;
+      }
+      table{
+        width: 300px;
+        height: 200px;
+        border-style: solid;
+        border-bottom: none;
+        border-top: none
+      }
+      .bottone{
+        position:absolute;
+        right: 325px;
+        top: 565px;
+        text-align: center;
+        background-color: #e7e7e7;
+        color: black;
+        font-family: fantasy;
+        font-size: 12px;
+        width: 150px;
+        height: 50px;
+      }
+      .bottone:hover{
+        border-color:#ecd414;
+        background-color:#cccccc;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+    <img src="Image/Logo1.png" alt="Millennio Abbigliamento" width=20% lenght=20%>
+    </center>
+
+    <a href="Shop.html" class="back">  ⇦  Torna allo shop  </a>
+    <div class="carrello">
+      <br>
+      <h3> Carrello </h3>
+      <br> <br>
+
+    <p>  Non ci sono articoli nel tuo carrello </p>
+
+    </div>
+
+    <div class="pagamento">
+
+      <h3> Pagamento </h3>
+
+      <table align="center">
+        <tr>
+          <td> 0 articoli </td>
+          <td> 0.00€ </td>
+        </tr>
+        <tr>
+          <td> Spedizione</td>
+          <td> Gratuita</td>
+        </tr>
+        <tr>
+          <td> Totale</td>
+          <td> 0.00€ </td>
+        </tr>
+      </table>
+    </div>
+
+    <input type="button" value="Procedi al pagamento" class="bottone" onclick="Pagamento()">
+
+    <script type="application/javascript">
+
+    function Pagamento()
+    {
+      alert("Non puoi procedere al pagamento se non è stato aggiunto nemmeno un oggetto al carrello. Tornare allo shop e riprovare.")
+    }
+
+    </script>
+  </body>
+</html>

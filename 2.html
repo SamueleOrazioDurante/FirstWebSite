@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Millennio Abbigliamento</title>
+    <style>
+      body {
+        background-image: url("Image/sfondo.jpg");
+      }
+      .b:link, .b:visited {
+  background-color: #ecd414;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  display: inline-block;
+  font-family: Fantasy;
+}
+
+.b:hover, .b:active {
+  background-color: #f0df64;
+}
+.c{
+  background-color: #ecd414;
+  height:550px;
+  width:450px;
+  position:absolute;
+  top:250px;
+  left:240px;
+}
+.pimage{
+  position:absolute;
+  top:35px;
+  left:35px;
+  background-color:#ffffff;
+}
+.d{
+  background-image:url("Image/sfondo.jpg");
+  border-width:10px;
+  border-style: solid;
+  border-color:#ecd414;
+  position:absolute;
+  top:270px;
+  right:100px;
+  height:400px;
+  width:600px;
+}
+.text1{
+  font-family: Geneva;
+  position:absolute;
+  left: 20px;
+}
+.text2{
+  font-family: Monospace;
+  position:absolute;
+  width:250px;
+  height:150px;
+  left: 300px;
+  top: 100px;
+  background-color:#e7e7e7;
+  border-style:solid;
+  border-color:#ecd414;
+  border-radius:20px;
+  text-align:center;
+}
+.price{
+  font-family: "Courier New";
+  position:absolute;
+  left: 20px;
+  top: 100px;
+ font-size:22px;
+}
+.prod{
+  font-family: Geneva;
+  position:absolute;
+  left: 72px;
+  top: 223px;
+  font-size:18px;
+}
+.min1{
+  position:absolute;
+  left: 160px;
+  top: 246px;
+  text-align: center;
+  background-color: #e7e7e7;
+  color: black;
+}
+.min1:hover{
+  border-color:#ecd414;
+  background-color:#cccccc;
+}
+#np{
+  position:absolute;
+  left: 191px;
+  top: 227px;
+}
+.max1{
+  position:absolute;
+  left: 209px;
+  top: 246px;
+  text-align: center;
+  background-color: #e7e7e7;
+  color: black;
+}
+.max1:hover{
+  border-color:#ecd414;
+  background-color:#cccccc;
+}
+
+.carrello{
+  position:absolute;
+  left: 180px;
+  top: 320px;
+  text-align: center;
+  background-color: #e7e7e7;
+  color: black;
+  font-size: 13px;
+  width: 150px;
+  height: 50px;
+}
+.carrello:hover{
+  border-color:#ecd414;
+  background-color:#cccccc;
+  width: 160px;
+  height: 60px;
+}
+.img1{
+  position:absolute;
+  top:450px;
+  left:200px;
+}
+.c1{
+  background-color:black;
+  width: 1500px;
+  height: 300px;
+  position:absolute;
+  top: 1100px;
+  text-align: center;
+}
+.color{
+  background-color:#ecd414;
+  width: 1500px;
+  height: 100px;
+  position: absolute;
+  top: 875px;
+}
+.size{
+  font-family: Geneva;
+  position:absolute;
+  left: 92px;
+  top: 183px;
+  font-size:18px;
+}
+.menu2 {
+  background-color: #e7e7e7;
+  color: black;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-style: solid;
+  border-color: black;
+}
+
+.menu2:hover, .menu2:focus {
+  border-style:solid;
+  border-color:#ecd414;
+  background-color:#cccccc;
+}
+.menu {
+  position: absolute;
+  display: inline-block;
+  right: 505px;
+  top: 475px;
+
+}
+
+.menu3 {
+  display: none;
+  position: absolute;
+  min-width: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.menu3 button{
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.menu3 a:hover {background-color: #ddd}
+
+.show {display:block;}
+      </style>
+  </head>
+  <body>
+    <center>
+
+    <img src="Image/Logo1.png" alt="Millennio Abbigliamento" width=20% lenght=20%>
+    <br> <br> <br>
+
+    <a href="index.html" class="b"> Home </a>
+    <a href="Who.html" class="b"> Chi siamo? </a>
+    <a href="Shop.html" class="b"> Shop </a>
+    <a href="Registrati.html" class="b"> Registrati </a>
+    <a href="Rimborso.html" class="b"> Rimborso </a>
+
+    </center>
+    <br> <br> <br>
+    <div class="c">
+      <img src="Image/Mascherina1.png" width="380px" height="380px" class="pimage" id="pimage">
+      <button type="button" class="img1"> <img src="Image/Mascherina1.png" width="50px" height="50px"> </button>
+    </div>
+
+    <div class="d">
+     <h2 class="text1"> MILLENNIO ABBIGLIAMENTO MASCHERINA WHITE </h2>
+     <h3 class="text2"> <br> Mascherina FFP2 italiana, placca in alluminio interna per regolarla sul naso, elestici sulle orecchie che non creano irritazioni, capacità di filtraggio del 95% </h3>
+
+     <h1 class="price"> 7.99 € </h1>
+     <h4 class="prod"> N.Prodotti </h4>
+
+     <h4 class="size"> Taglia </h4>
+
+     <button type="button" class="min1" onclick="pmin()"> - </button>
+     <h4 id="np">1</h4>
+     <button type="button" class="max1" onclick="pmax()"> + </button>
+
+     <button type="button" class="carrello" onclick="carrello()"> <h4> Aggiungi al carrello </h4>  </button>
+    </div>
+    <div class="color">
+    </div>
+    <div class="c1">
+      <br>
+      <h1> <font color="white"> Contattaci </font> </h1>
+      <h3> <font color="white"> Telefono: 1234567890 </font> </h3>
+      <h3> <font color="white"> E-mail: millennioabbigliamento@gmail.com </font> </h3>
+      <h3> <font color="white"> Indirizzo: Via Torino, 34 (RM) </font> </h3>
+      <img src="Image/Logo2.png" align="left" widht=20% height=20%>
+    </div>
+
+
+    <div class="menu">
+  <button onclick="menu()" class="menu2" id="sizes"> S </button>
+  <div id="menu" class="menu3">
+    <button type="button" onclick="csxs()"> XS </button>
+    <button type="button" onclick="css()"> S </button>
+    <button type="button" onclick="csm()"> M </button>
+    <button type="button" onclick="csl()"> L </button>
+    <button type="button" onclick="csxl()"> XL </button>
+  </div>
+</div>
+
+
+    <script type="application/javascript">
+    var a=parseInt("1")
+    var size="S"
+    function pmin()
+    {
+      if (a>1) {
+        a=a-1;
+        document.getElementById("np").innerHTML=a;
+      }
+      else {
+        alert("Numero di prodotti minimo raggiunto");
+      }
+    }
+    function pmax()
+    {
+      if (a<20) {
+        a=a+1;
+        document.getElementById("np").innerHTML=a;
+      }
+      else {
+        alert("Numero di prodotti massimo raggiunto");
+      }
+    }
+    function carrello()
+    {
+      alert("MILLENNIO ABBIGLIAMENTO MASCHERINA WHITE, con quantità " + a + " e con taglia " + size + " è stato aggiunto al carrello.")
+    }
+    function menu() {
+  document.getElementById("menu").classList.toggle("show");
+}
+  function csxs()
+  {
+    size="XS"
+    document.getElementById('sizes').innerHTML=size;
+}
+function css()
+{
+  size="S"
+  document.getElementById('sizes').innerHTML=size;
+}
+function csm()
+{
+  size="M"
+  document.getElementById('sizes').innerHTML=size;
+}
+function csl()
+{
+  size="L"
+  document.getElementById('sizes').innerHTML=size;
+}
+function csxl()
+{
+  size="XL"
+  document.getElementById('sizes').innerHTML=size;
+}
+
+
+  </script>
+
+  </body>
+</html>
